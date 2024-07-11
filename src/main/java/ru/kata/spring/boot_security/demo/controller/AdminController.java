@@ -54,7 +54,7 @@ public class AdminController {
         return "/admin/user_form";
     }
 
-    @DeleteMapping("/deleteUser")
+    @PostMapping("/deleteUser")
     public String deleteUser(@RequestParam("userId") Long id) {
         userService.deleteUser(id);
 
